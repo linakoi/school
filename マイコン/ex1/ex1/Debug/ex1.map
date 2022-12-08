@@ -1,0 +1,26 @@
+Optimizing Linkage Editor (V.9.05.01.000)         26-May-2022 10:03:14
+
+*** Options ***
+
+-subcommand=H:\マイコン\ex1\ex1\Debug\ex1.hlk
+-noprelink
+-nomessage
+-list="H:\マイコン\ex1\ex1\Debug\ex1.map"
+-nooptimize
+-start=P/0800,Stack/0FFD00
+-nologo
+-input="H:\マイコン\ex1\ex1\Debug\ex1.obj"
+-input="H:\マイコン\ex1\ex1\Debug\stacksct.obj"
+-output="H:\マイコン\ex1\ex1\Debug\ex1.abs"
+-end
+
+*** Error information ***
+
+*** Mapping List ***
+
+SECTION                            START      END         SIZE   ALIGN
+
+P
+                                  00000800  00000801         2   2
+Stack
+                                  000ffd00  000ffeff       200   2

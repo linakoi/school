@@ -1,0 +1,18 @@
+; アセンブリ言語例題(1)
+; IOポートからの入出力
+	.CPU 300HA ;CPUタイプ
+	.SECTION PROG, DATA, LOCATE=H'00000
+	.DATA.L RESET
+	.SECTION P,CODE , LOCATE=H'00800
+RESET:	MOV.L #H'FFFF00, ER7 ;SPセット
+		MOV.B #H'00, R0L ;#H'F0 とするとどうなる？ 
+		MOV.B R0L, @H'EE009 ;PA = 入力ポート
+		MOV.B #H'FF, R0L
+		MOV.B R0L, @H'EE00A ;PB = 出力ポート
+		MOV.B R0L, @H'EE003 ;P4 = 出力ポート
+LOOP:	MOV.B @H'FFFD9, R0L ;PA ->R0L（データ入力）
+		MOV.B R0L, R0H ;R0L -> R0H（レジスタ間転送）
+		MOV.B R0L, @H'FFFDA ;R0L -> PB（データ出力）
+		MOV.B R0H, @H'FFFD3 ;R0H -> P4（データ出力）
+		JMP @LOOP ;無限ループ
+	.END

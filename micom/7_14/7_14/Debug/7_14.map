@@ -1,0 +1,28 @@
+Optimizing Linkage Editor (V.9.05.01.000)         14-Jul-2022 10:03:52
+
+*** Options ***
+
+-subcommand=C:\Users\j21306\Desktop\micom\7_14\7_14\Debug\7_14.hlk
+-noprelink
+-nomessage
+-list="C:\Users\j21306\Desktop\micom\7_14\7_14\Debug\7_14.map"
+-nooptimize
+-start=P/0800,Stack/0FFD00
+-nologo
+-input="C:\Users\j21306\Desktop\micom\7_14\7_14\Debug\7_14.obj"
+-input="C:\Users\j21306\Desktop\micom\7_14\7_14\Debug\stacksct.obj"
+-output="C:\Users\j21306\Desktop\micom\7_14\7_14\Debug\7_14.abs"
+-end
+
+*** Error information ***
+
+*** Mapping List ***
+
+SECTION                            START      END         SIZE   ALIGN
+
+PROG
+                                  00000000  00000003         4   0
+P
+                                  00000800  00000827        28   0
+Stack
+                                  000ffd00  000ffeff       200   2

@@ -1,0 +1,8 @@
+"H:\マイコン\ex1\ex1\stacksct.src"
+-cpu=300HA:20
+-debug
+-object="H:\マイコン\ex1\ex1\Debug\stacksct.obj"
+-nolist
+-nologo
+-chgincpath
+-errorpath

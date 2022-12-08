@@ -1,0 +1,14 @@
+-noprelink
+-nomessage
+-list="H:\マイコン\ex1\ex1\Debug\ex1.map"
+-nooptimize
+-start=P/0800,Stack/0FFD00
+-nologo
+-input="H:\マイコン\ex1\ex1\Debug\ex1.obj"
+-input="H:\マイコン\ex1\ex1\Debug\stacksct.obj"
+-output="H:\マイコン\ex1\ex1\Debug\ex1.abs"
+-end
+-input="H:\マイコン\ex1\ex1\Debug\ex1.abs"
+-form=stype
+-output="H:\マイコン\ex1\ex1\Debug\ex1.mot"
+-exit

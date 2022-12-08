@@ -1,0 +1,8 @@
+"C:\Users\j21306\Desktop\micom\7_2\7_2\7_2.src"
+-cpu=300HA:20
+-debug
+-object="C:\Users\j21306\Desktop\micom\7_2\7_2\Debug\7_2.obj"
+-nolist
+-nologo
+-chgincpath
+-errorpath

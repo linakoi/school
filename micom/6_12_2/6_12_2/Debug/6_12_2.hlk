@@ -1,0 +1,14 @@
+-noprelink
+-nomessage
+-list="C:\Users\j21306\Desktop\micom\6_12_2\6_12_2\Debug\6_12_2.map"
+-nooptimize
+-start=P/0800,Stack/0FFD00
+-nologo
+-input="C:\Users\j21306\Desktop\micom\6_12_2\6_12_2\Debug\6_12_2.obj"
+-input="C:\Users\j21306\Desktop\micom\6_12_2\6_12_2\Debug\stacksct.obj"
+-output="C:\Users\j21306\Desktop\micom\6_12_2\6_12_2\Debug\6_12_2.abs"
+-end
+-input="C:\Users\j21306\Desktop\micom\6_12_2\6_12_2\Debug\6_12_2.abs"
+-form=stype
+-output="C:\Users\j21306\Desktop\micom\6_12_2\6_12_2\Debug\6_12_2.mot"
+-exit
